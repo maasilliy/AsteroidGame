@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundActivity"
+    tools:context=".GameWin">
+
+    <TextView
+        android:id="@+id/tvGameOver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Игра \n окончена"
+        android:textAlignment="center"
+        android:layout_marginTop="100dp"
+        android:textSize="60sp"
+        android:textColor="#eda726"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvGameWin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Вы \n Выиграли"
+        android:textAlignment="center"
+        android:textSize="60dp"
+        android:textColor="@color/textWin"
+        app:layout_constraintTop_toBottomOf="@+id/tvGameOver"/>
+
+    <Button
+        android:id="@+id/btnToMain"
+        android:text="В главное меню"
+        android:textSize="30dp"
+        android:textColor="#fff0f0"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_marginTop="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGameWin"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
