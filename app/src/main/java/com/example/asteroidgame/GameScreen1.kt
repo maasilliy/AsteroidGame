@@ -106,7 +106,7 @@ class GameScreen1 : AppCompatActivity() {
             withContext(Dispatchers.Main) {
                 array.random().visibility = View.VISIBLE
             }
-            delay(500)
+            delay(400)
             if (array.all {it.visibility == View.VISIBLE})  {
                 overSound.start()
                 con = false

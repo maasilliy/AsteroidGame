@@ -91,7 +91,7 @@ class GameScreen3 : AppCompatActivity() {
             delay(1000)
             if (count <= 0) {
                 myDBManager.openDb()
-                myDBManager.insertToDb(1)
+                myDBManager.insertToDb(5)
                 winSound.start()
                 con = false
                 start = false
